@@ -4,6 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+      }
+      
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+      
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+      
+      .row {
+        margin: 8px -16px;
+      }
+      
+      .row,
+      .row > .column {
+        padding: 8px;
+      }
+      
+      .column {
+        float: left;
+        width: 25%;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+      
+      @media screen and (max-width: 900px) {
+        .column {
+          width: 50%;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+      </style>
+      </head>
+      <body>
+      
     <title>Bootstrap-Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,15 +85,14 @@
             </li>
              </ul>
     </header>
+    
     <body>
       <header>
-        <h2 class="display-6">Portfolio</h2>
-    <div class="row">
-      <div class="column-md-">
+      <h2 class="display-6">Portfolio</h2>
+      <div class="column">
         <div class="content">
-          <img src="mountains.jpg" alt="Mountains" style="width:100%">
-          <h3>My Work</h3>
-          <p>Lorem ipsum..</p>
+          <img src="assets/images/sloth-entertainment.jpg" alt="sloth-entertainment" style="width:25%">
+          <h3>E! App</h3>
         </div>
       </div>
       <div class="column">
