@@ -4,10 +4,40 @@ body {
     margin:0;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+    }
+
+body {
+    margin-bottom: 60px;
+}
+
+h3 {
+    background-color: teal;
+    width: 99%;
+}
+
+/* .portcol {
+    position: relative;
+
+} */
+
+.portimg {
+    width: 90%;
+    /* position: absolute; */
+    bottom: 1%;
+}
+
+.portfolio {
+    margin-bottom: 5%;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 60px;
     line-height: 30px;
     background-color: darkgray;
     color: white;
